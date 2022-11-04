@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+  flyway-rollback-db:
+    image: postgres:14.5
+    container_name: flyway-rollback-db
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+    ports:
+      - '5432:5432'
